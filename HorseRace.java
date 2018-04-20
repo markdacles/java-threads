@@ -35,7 +35,7 @@ public class HorseRace {
 				horses[i] = new Horse(horseNames.get(i),horseBC.get(i), HorseUtil.getBoolean(), 1, 0);
 			}
 			else {
-				horses[i] = new Horse("horse"+String.valueOf(i),"battle cry"+String.valueOf(i), Util.getBoolean(), 1, 0);
+				horses[i] = new Horse("horse"+String.valueOf(i),"battle cry"+String.valueOf(i), HorseUtil.getBoolean(), 1, 0);
 			}
 		}
 
@@ -173,7 +173,7 @@ public class HorseRace {
 		horseList.sort((Horse h1 , Horse h2) -> Integer.compare(h1.getFPlace(), h2.getFPlace()));
 
 		for (Horse horse: horseList) {
-        	System.out.println(horse.getName() + " finished in " + horse.getFPlace() + Util.getNumberSuffix(horse.getFPlace()) + " place in "+ horse.getFTime() + " seconds, " + horse.getBC());
+        	System.out.println(horse.getName() + " finished in " + horse.getFPlace() + HorseUtil.getNumberSuffix(horse.getFPlace()) + " place in "+ horse.getFTime() + " seconds, " + horse.getBC());
         }
 
         System.out.println("\nThank you for playing, please race again!!!");

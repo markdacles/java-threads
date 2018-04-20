@@ -11,13 +11,13 @@ public class RunRace {
 		
 			System.out.print("Input Number of Horses: ");
 		
-			int numOfHorses = Util.getInt(5);
+			int numOfHorses = HorseUtil.getInt(5);
 			redo = horseRace.setHealthyHorses(numOfHorses);
 		}
 		
 		System.out.print("Input Race Distance: ");
 
-		int raceDist = Util.getInt(100);
+		int raceDist = HorseUtil.getInt(100);
 
 		horseRace.setRaceDistance(raceDist);
 
